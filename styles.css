@@ -837,6 +837,56 @@ ul {
     border: 1px solid var(--border);
 }
 
+.timeline-logo-img {
+    flex-shrink: 0;
+    width: 80px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* --- Company Logo Strip --- */
+.logo-strip {
+    margin-top: 3rem;
+    padding: 2.5rem 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.logo-strip-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+    font-weight: 400;
+}
+
+.logo-strip-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-strip-item {
+    transition: var(--transition);
+    opacity: 0.75;
+}
+
+.logo-strip-item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.logo-strip-item img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
 .timeline-achievements {
     margin-bottom: 1rem;
 }
@@ -1381,6 +1431,18 @@ ul {
 
     .timeline-logo {
         align-self: flex-start;
+    }
+
+    .timeline-logo-img {
+        align-self: flex-start;
+    }
+
+    .logo-strip-row {
+        gap: 2rem;
+    }
+
+    .logo-strip-item img {
+        height: 32px;
     }
 
     .hero-scroll {
