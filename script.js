@@ -11,7 +11,6 @@
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
-    const themeToggle = document.getElementById('theme-toggle');
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
@@ -69,26 +68,6 @@
             navToggle.classList.remove('active');
             navMenu.classList.remove('open');
         });
-    });
-
-    // --- Dark Mode ---
-    function getPreferredTheme() {
-        var stored = localStorage.getItem('theme');
-        if (stored) return stored;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-
-    function setTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    }
-
-    // Initialize theme
-    setTheme(getPreferredTheme());
-
-    themeToggle.addEventListener('click', function () {
-        var current = document.documentElement.getAttribute('data-theme');
-        setTheme(current === 'dark' ? 'light' : 'dark');
     });
 
     // --- Scroll Animations (Intersection Observer) ---
