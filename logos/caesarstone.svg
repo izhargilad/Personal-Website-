@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
-  <rect width="200" height="80" rx="8" fill="#1a1a1a"/>
-  <text x="100" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="400" font-size="22" fill="#c8a96e" letter-spacing="3">CAESARSTONE</text>
-  <line x1="30" y1="58" x2="170" y2="58" stroke="#c8a96e" stroke-width="0.5" opacity="0.6"/>
-</svg>
