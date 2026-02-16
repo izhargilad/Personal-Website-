@@ -839,10 +839,13 @@ ul {
 
 .timeline-logo-img {
     flex-shrink: 0;
-    width: 80px;
-    height: 36px;
+    width: 120px;
+    height: 50px;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 8px;
+    background: var(--white);
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* --- Company Logo Strip --- */
@@ -873,7 +876,10 @@ ul {
 
 .logo-strip-item {
     transition: var(--transition);
-    opacity: 0.75;
+    opacity: 0.85;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 12px 24px;
 }
 
 .logo-strip-item:hover {
@@ -882,7 +888,7 @@ ul {
 }
 
 .logo-strip-item img {
-    height: 40px;
+    height: 52px;
     width: auto;
     object-fit: contain;
 }
@@ -1438,11 +1444,15 @@ ul {
     }
 
     .logo-strip-row {
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .logo-strip-item {
+        padding: 10px 18px;
     }
 
     .logo-strip-item img {
-        height: 32px;
+        height: 40px;
     }
 
     .hero-scroll {
